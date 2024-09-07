@@ -18,8 +18,8 @@ function App() {
     )
     .then(res=>res.json())
     .then(response => {   
-      setData(response.data.photos.photo)
-      console.log(response.data.photos.photo); 
+      setData(response.photos.photo)
+     
     })
     .catch(error => {
       console.log(
